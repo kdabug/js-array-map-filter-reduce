@@ -1,6 +1,6 @@
 # Map and Filter
 
-![alt text](image.jpg)
+![alt text](image.png)
 
 ## Map
 
