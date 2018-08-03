@@ -2,6 +2,22 @@
 
 ![alt text](image.png)
 
+## Filter
+
+`.filter()` will take an array, and produce a new array that only contains some of the items. Each item in the array runs through a function. If the function returns true, the item is included in the new array.
+
+```js
+const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
+const shortWords = words.filter(function(word) { return word.length <= 3 });
+// shortWords = [ 'the', 'is', 'round', 'an' ];
+```
+
+```js
+const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
+const wordsThatStartWithR = words.filter(function(word) { return word[0] === 'r' });
+// wordsThatStartWithR = ['round'];
+```
+
 ## Map
 
 `.map()` will take an array, and produce a new array with new values. In an anonymous function, you define what each value in the array should be based on an existing item.
@@ -19,22 +35,6 @@ const wordsWrappedInX = words.map(function(word) {
   return newWord;
 });
 // wordLengths = [ 'xthex', 'xworldx', 'xisx', 'xroundx', 'xlikex', 'xanx', 'xorangex' ]
-```
-
-## Filter
-
-`.filter()` will take an array, and produce a new array that only contains some of the items. Each item in the array runs through a function. If the function returns true, the item is included in the new array.
-
-```js
-const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
-const shortWords = words.filter(function(word) { return word.length <= 3 });
-// shortWords = [ 'the', 'is', 'round', 'an' ];
-```
-
-```js
-const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
-const wordsThatStartWithR = words.filter(function(word) { return word[0] === 'r' });
-// wordsThatStartWithR = ['round'];
 ```
 
 ## Exercises
