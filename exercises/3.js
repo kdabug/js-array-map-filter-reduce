@@ -108,5 +108,9 @@ const turnstileLogs = [
 ];
 
 function getThursdayTurnstileLogs(logs) {
-  
+  let result = [];
+  result.push(logs.filter(log => log.includes("Thu")));
+  return result;
 }
+
+console.log(getThursdayTurnstileLogs(turnstileLogs));
