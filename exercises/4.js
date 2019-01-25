@@ -16,6 +16,6 @@ const fruitColor = fruits.map(fruit => {
 console.log(fruitColor);
 
 const fruitColor2 = fruits.map(fruit =>
-  fruit === "bananas" ? "red" : "yellow"
+  fruit === "banana" ? "yellow" : "red"
 );
 console.log(fruitColor2);
