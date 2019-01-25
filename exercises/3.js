@@ -1,6 +1,8 @@
 // Create a function called `getThursdayTurnstileLogs`
 // that accepts an array of logs, and returns a new array
 // that only contains turnstile logs from Thursday.
+// Hint:  check out String.prototype.includes from the mdn docs
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
 const turnstileLogs = [
   "Sat Nov 03 2012 10:10:11 - Dr. Olaf Emard went through the turnstile",

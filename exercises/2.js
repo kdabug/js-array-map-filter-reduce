@@ -3,6 +3,9 @@
 // Create a new array called `ericTurnstileLogs` that only contains 
 // logs when Eric Lewis came through the turnstile, and log it to the console.
 // Use the .filter() method.
+// 
+// Hint: check out the String.prototype.includes method from mdn
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
 const turnstileLogs = [
   "Sat Nov 03 2012 10:10:11 - Dr. Olaf Emard went through the turnstile",
