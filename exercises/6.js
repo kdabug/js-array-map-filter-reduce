@@ -1,5 +1,5 @@
 // Given an array of turnstile logs, produce a new array
-// called `travelerNames` that contains only the names 
+// called `travelerNames` that contains only the names
 // of the people that went through the turnstile.
 
 // Use .map()!
@@ -110,3 +110,11 @@ const turnstileLogs = [
   "Tue Sep 14 2010 11:45:08 - Elisha Zulauf went through the turnstile",
   "Fri Jan 18 2013 05:00:36 - Myrtis Schiller MD went through the turnstile"
 ];
+
+const travelerNames = turnstileLogs.map(log =>
+  log.substring(27, log.indexOf("went")).trim()
+);
+
+console.log(travelerNames);
+
+console.log(turnstileLogs[1].indexOf("-"));
