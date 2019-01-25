@@ -1,4 +1,4 @@
-# Map and Filter
+# Map, Filter, Reduce
 
 ![alt text](image.png)
 
@@ -44,22 +44,6 @@ arr.forEach(function(element) {
 4. Use a for loop, a for..of loop, and the forEach method to print out only numbers greater than 3
 5. Use a for loop, a for..of loop, and the forEach method to add up all the numbers and print out the result
 
-## Filter
-
-`.filter()` will take an array, and produce a new array that only contains some of the items. Each item in the array runs through a function. If the function returns true, the item is included in the new array.
-
-```js
-const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
-const shortWords = words.filter(function(word) { return word.length <= 3 });
-// shortWords = [ 'the', 'is', 'round', 'an' ];
-```
-
-
-```js
-const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
-const wordsThatStartWithR = words.filter(function(word) { return word[0] === 'r' });
-// wordsThatStartWithR = ['round'];
-```
 
 ## Map
 
@@ -80,9 +64,25 @@ const wordsWrappedInX = words.map(function(word) {
 // wordLengths = [ 'xthex', 'xworldx', 'xisx', 'xroundx', 'xlikex', 'xanx', 'xorangex' ]
 ```
 
+## Filter
 
-### [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+`.filter()` will take an array, and produce a new array that only contains some of the items. Each item in the array runs through a function. If the function returns true, the item is included in the new array.
 
+```js
+const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
+const shortWords = words.filter(function(word) { return word.length <= 3 });
+// shortWords = [ 'the', 'is', 'round', 'an' ];
+```
+
+
+```js
+const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange'];
+const wordsThatStartWithR = words.filter(function(word) { return word[0] === 'r' });
+// wordsThatStartWithR = ['round'];
+```
+
+
+## Reduce
 - "The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value."
 
 ```javascript
