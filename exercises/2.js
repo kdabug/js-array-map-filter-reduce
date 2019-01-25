@@ -1,9 +1,9 @@
-// A lot of people come through the subway. We have logs that tell us 
+// A lot of people come through the subway. We have logs that tell us
 // when each person came through the turnstile. Wow there's a lot!
-// Create a new array called `ericTurnstileLogs` that only contains 
+// Create a new array called `ericTurnstileLogs` that only contains
 // logs when Eric Lewis came through the turnstile, and log it to the console.
 // Use the .filter() method.
-// 
+//
 // Hint: check out the String.prototype.includes method from mdn
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
@@ -109,3 +109,8 @@ const turnstileLogs = [
   "Tue Sep 14 2010 11:45:08 - Elisha Zulauf went through the turnstile",
   "Fri Jan 18 2013 05:00:36 - Myrtis Schiller MD went through the turnstile"
 ];
+
+const ericTurnstileLogs = turnstileLogs.filter(
+  string => string.indexOf("Eric Lewis") > -1
+);
+console.log(ericTurnstileLogs);
